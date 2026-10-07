@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gueules de Vignerons par RVin, une maison de vin pour les professionnels et les particuliers.">
+    <title>Gueules de Vignerons par RVin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+        <span>Gueules de</span>
+        <strong>Vignerons</strong>
+        <small>par RVin</small>
+      </a>
+      <p class="header-note">Le vin comme point de rencontre</p>
+    </header>
+
+    <main class="landing">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Deux façons d'entrer dans la maison</p>
+        <h1 id="page-title">Choisissez votre<br><em>côté de la bouteille.</em></h1>
+        <p class="intro-copy">Une sélection vivante, pensée pour ceux qui font le vin et ceux qui le partagent.</p>
+      </section>
+
+      <section class="choice-stage" aria-label="Choisir son espace">
+        <div class="choice choice-pro">
+          <a class="object-link" href="professionnels.html" data-fill="bottle" aria-label="Accéder à l'espace professionnel">
+            <span class="choice-label">Professionnel</span>
+            <svg class="bottle" viewBox="0 0 220 520" role="img" aria-labelledby="bottle-title bottle-desc">
+              <title id="bottle-title">Bouteille de vin</title>
+              <desc id="bottle-desc">Une bouteille qui se remplit de vin rouge au clic.</desc>
+              <defs>
+                <clipPath id="bottle-clip">
+                  <path d="M83 112h54v44c0 17 25 30 25 62v250c0 24-14 38-52 38s-52-14-52-38V218c0-32 25-45 25-62z"/>
+                </clipPath>
+                <linearGradient id="wine-bottle" x1="0" x2="1">
+                  <stop offset="0" stop-color="#4b1018"/>
+                  <stop offset=".48" stop-color="#a52d34"/>
+                  <stop offset="1" stop-color="#5b111a"/>
+                </linearGradient>
+              </defs>
+              <path class="glass-outline" d="M83 112h54v44c0 17 25 30 25 62v250c0 24-14 38-52 38s-52-14-52-38V218c0-32 25-45 25-62z"/>
+              <g class="wine-fill" clip-path="url(#bottle-clip)">
+                <rect x="48" y="410" width="124" height="112" fill="url(#wine-bottle)"/>
+                <path class="liquid-surface" d="M40 407c25-8 44 7 67 0s43-7 73 0v18H40z"/>
+              </g>
+              <path class="bottle-highlight" d="M79 224v220c0 13 7 23 17 27"/>
+              <path class="bottle-neck" d="M83 112h54v44H83z"/>
+              <path class="bottle-cap" d="M81 96h58v20H81z"/>
+              <path class="bottle-label" d="M68 287h84v84H68z"/>
+              <text x="110" y="320" text-anchor="middle" class="label-small">RVin</text>
+              <text x="110" y="342" text-anchor="middle" class="label-large">GUEULES</text>
+            </svg>
+            <span class="object-hint">Entrer dans l'espace pro <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+
+        <div class="stage-divider" aria-hidden="true"><span>ou</span></div>
+
+        <div class="choice choice-private">
+          <a class="object-link" href="particuliers.html" data-fill="glass" aria-label="Accéder à l'espace particulier">
+            <span class="choice-label">Particulier</span>
+            <svg class="wine-glass" viewBox="0 0 260 420" role="img" aria-labelledby="glass-title glass-desc">
+              <title id="glass-title">Verre à vin</title>
+              <desc id="glass-desc">Un verre qui se remplit de vin rouge au clic.</desc>
+              <defs>
+                <clipPath id="glass-clip">
+                  <path d="M44 47h172c-2 119-34 168-76 173v130h58v18H62v-18h58V220C78 215 46 166 44 47z"/>
+                </clipPath>
+                <linearGradient id="wine-glass" x1="0" x2="1">
+                  <stop offset="0" stop-color="#5b111a"/>
+                  <stop offset=".5" stop-color="#ad3036"/>
+                  <stop offset="1" stop-color="#64111b"/>
+                </linearGradient>
+              </defs>
+              <path class="glass-outline" d="M44 47h172c-2 119-34 168-76 173v130h58v18H62v-18h58V220C78 215 46 166 44 47z"/>
+              <g class="wine-fill" clip-path="url(#glass-clip)">
+                <rect x="30" y="157" width="200" height="230" fill="url(#wine-glass)"/>
+                <path class="liquid-surface" d="M30 154c35-8 61 8 97 0s63-7 103 0v18H30z"/>
+              </g>
+              <path class="glass-highlight" d="M67 70c4 70 19 101 40 119"/>
+              <path class="wine-line" d="M51 157h158"/>
+            </svg>
+            <span class="object-hint">Découvrir la boutique <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>RVin sélectionne, raconte et partage.</span>
+      <span>© 2026 Gueules de Vignerons</span>
+    </footer>
+  </body>
+</html>
