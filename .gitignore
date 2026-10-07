@@ -1,20 +1,10 @@
-# Dependencies
 node_modules/
-
-# Builds
-dist/
-build/
 .next/
-.vite/
-
-# Environment and secrets
+out/
 .env
 .env.*
 !.env.example
-
-# Operating system and editor files
+npm-debug.log*
+*.tsbuildinfo
 .DS_Store
-Thumbs.db
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
+coverage/
